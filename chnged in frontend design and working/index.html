@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weekly Budget</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container-fluid text-center">
+        <br><br>
+        <h1 style="color: whitesmoke"><strong>WEEKLY BUDGET APP</strong></h1>
+        <br><br>
+        <div class="input-group half mx-auto">
+            <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+                <span class="input-group-text d1">0</span>
+            </div>
+            <input type="number" class="form-control" placeholder="ENTER YOUR WEEKLY BUDGET" id="budget">
+
+        </div>
+        <button type="button" class="btn btn-secondary val1">Submit</button>
+        <button type="button" class="btn btn-secondary reset">Reset</button>
+
+
+        <br><br><br>
+        <div class="container">
+            <div class="jumbotron card card-image"
+                style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
+                <h2 STYLE="color: whitesmoke">ENTER YOUR EXPENSES HERE</h2>
+                <br>
+                <form class="text-center p-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="input-group  mx-auto">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">REASON</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="ex:transport" id="item">
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="input-group mx-auto">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">AMOUNT</span>
+                                </div>
+                                <input type="number" class="form-control" placeholder="ex:100" id="spent">
+                            </div>
+
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-danger val3 mt-2">ADD</button>
+                </form>
+                <div class="text-white text-center py-5 px-4">
+                    <div>
+                        <h2 class="card-title h1-responsive  mb-5 font-bold"><strong>YOUR BUDGET DETAILS</strong></h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2 style="text-decoration: underline">DETAILS</h2>
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-danger ">
+                                        <i class="fas fa-rupee-sign mr-4 "></i> BUDGET &nbsp &nbsp
+                                        <span class="badge badge-primary badge-pill d2">0</span>
+                                    </li>
+                                    <br>
+                                    <li class="list-group-item list-group-item-danger">
+                                        <i class="fas fa-hand-holding-usd mr-4"></i>LEFT &nbsp &nbsp
+                                        <span class="badge badge-primary badge-pill left">0</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <h2 style="text-decoration: underline">EXPENDITURE</h2>
+                                <ul class="list-group" id="main">
+
+
+                                </ul>
+                                <button type="button" class="btn btn-outline-secondary clear">CLEAR ALL</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
